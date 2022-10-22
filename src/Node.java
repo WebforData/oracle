@@ -6,6 +6,7 @@ public class Node {
     }
     @Override
     public String toString() {
-        return value+" ->";
+        String s=(next==null) ? " null" : "";
+        return value+" ->" +s;
     }
 }

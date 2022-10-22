@@ -13,7 +13,7 @@ public class App {
         node1.next=new Node(7);
         node1.next.next=new Node(8);
         node1.next.next.next=new Node(19);
-        node1.next.next.next.next=new Node(21);
+        node1.next.next.next.next=new Node(22);
         Node head=mergeLinkedList(node, node1);
         while(head!=null){
             System.out.print(head);
