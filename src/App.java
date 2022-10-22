@@ -3,22 +3,12 @@ import java.util.Map;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Node node=new Node(1);
-        node.next=new Node(2);
-        node.next.next=new Node(3);
-        node.next.next.next=new Node(4);
-        node.next.next.next.next=new Node(15);
-        
-        Node node1=new Node(6);
-        node1.next=new Node(7);
-        node1.next.next=new Node(8);
-        node1.next.next.next=new Node(19);
-        node1.next.next.next.next=new Node(22);
-        Node head=mergeLinkedList(node, node1);
-        while(head!=null){
-            System.out.print(head);
-            head=head.next==null ? null : head.next;
-        }
+        // 
+        HashtableArray<String> a=new HashtableArray<String>(3);
+        a.put(1,"hello");
+        a.put(10,"good");
+        a.put(80,"hi");
+        System.out.println(a);
     }
 
     public static int missingNumber(int[] nums){
